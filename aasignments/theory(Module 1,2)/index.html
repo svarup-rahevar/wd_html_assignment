@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my first HTML file</title>
+    <link rel="icon" type="image/x-icon" href="WHOA!.png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide|Sofia|Trirong&effect=fire|neon">
+    <script src="https://kit.fontawesome.com/06cc2dfb05.js" crossorigin="anonymous"></script>
+    <style>
+
+    :root{color-scheme: light;}
+
+     h4{background-color:rgb(36, 0, 0); color:white; display:block;  border: 1px solid black; text-align: center;  margin: auto;width: 30%;border-radius: 10px;}
+     a:link{
+           color:red;
+           background-color: transparent;
+           text-decoration: none;
+           }
+          .opacityimg img{opacity:0.7}
+          .opacityimg img:hover{opacity:1;}
+
+     table {text-align: center;}
+     #uniquetable th,tr,td           {border-right:1px solid black; border-bottom:1px solid black;}
+     #uniquetable th:nth-child(even) {background-color: grey}
+     #uniquetable tr:nth-child(even) {background-color:grey}
+     #uniquetable td:nth-child(even) {background-color: grey}
+
+     #gallery           {text-decoration: underline;}
+     #unique            {text-transform: uppercase;}
+     #header            {color:blue;}
+     #contact-details   {text-decoration:underline; color:blue; text-transform:uppercase }
+     #classic table     { background-color: grey;}
+
+
+     /* to see the focus effect,keep click on link,color will transform to yellow. */
+
+     #text:focus {background-color:chartreuse;}
+     #text {background-image: url("WHOA!.png"); font-size: 14px;color: gray;padding: 10px;border-radius: 5px black}
+     #map p, pre{ float: left;}
+     #map pre {clear: right; margin: 10px;border-bottom: 2px solid black;border-top: 2px solid black ;}
+     #top {font-family: "audiowide",sans-serif;letter-spacing: 3px;}
+     .firefont {font-family: "sofia",sans-serif;color:cadetblue}
+
+     .navig {border:1px solid black;height:fit-content}
+     .navlist a {border:1px solid black;padding:10px}
+     .navlist li{display:inline}
+    .navlist {border:1px solid blue;margin: 0%;padding:10px;}
+    .hnav {width:20px;}
+
+    .align-form{width:50%}
+    .align-form> input{display:inline-block;margin-left:5px}
+    .align-form>label {display: inline-block ;width:20%;margin-right:5px}
+
+    .nucleus{width:80px;height:80px;border-radius: 50px;border:1px solid black;margin:auto;margin-block: 40px;background-image: url("Noyau_atome.png");}
+
+    </style>
+
+    </head>
+    <body id="body">
+    <h2 id="top" class="font-effect-neon" style="margin-top:100px;">here we have practice on my first HTML file</h2>
+    <h1 class="firefont font-effect-fire">Hello world !</h1>
+    <h2>this is lavel 2 heading</h2>
+    <h3>this is lavel 3 heading</h3>
+    <h4>this is lavel 4 heading</h4>
+    <h5>this is lavel 5 heading</h5>
+    <h6>this is lavel 6 heading</h6>
+    <p><b><i>Lorem=<q>this code used to make some words automatically</q></i></b> ipsum dolor sit amet consectetur, adipisicing elit. Ipsam animi possimus quo consequatur aliquid ad, ut iste assumenda voluptatum sint inventore magnam alias similique culpa obcaecati ullam quaerat, temporibus quod a.<strong>lorem</strong> Dolorem debitis laudantium<em>lorem</em> dolore reprehenderit, expedita ex eos odio possimus nesciunt tempore mollitia doloribus?</p>
+    <br>
+    <hr>
+    h<sub>2</sub>so<sub>4</sub>
+    m<br>
+    e=mc<sup>2</sup>
+    <br>
+    <blockquote cite="https://en.wikipedia.org/wiki/Black_hole">about black hole and its first image</blockquote><p><b>as we all know about the concept of black hole the concept which has first given by <q>stephen hawking</q>the great scientist</b></p>
+    <br>
+    <p>Lorem <ins>lorem</ins>ipsum <del>loren</del> dolor sit amet.</p>
+    <br>
+    <h3>  orderd list</h3>
+    <ol>
+    <li>list 1
+    <ul>
+    <LI>SUBLIST</LI>
+    <LI>SUBLIST 2</LI>
+    </ul>
+    </li>
+    <li>list 2</li>
+    <li>list 3</li>
+    <li>list 4</li>
+    </ol>
+    <BR>
+    <h3>unordered list</h3>
+    <UL>
+    <LI>LIST 1</LI>
+    <LI>LIST 2</LI>
+    <LI>LIst 3</LI>
+    </UL>
+    <br>
+    <dl>
+    <dt>discription term:</dt>
+    <dd>
+    discription contant will be writen here.
+    </dd>
+    </dl>
+
+    <br>
+    <p><a href ="https://www.google.com/" target="_blank">go to google</a>(this is absolute url example.)</p>
+    <p><a href="photos/my photos/hello word.html" target="blank">go to hello.html</a>(this is relative url example.)</p>
+    <br>
+    <p><a href="mailto:rahevarsvarup1998@gmail.com" target="self">mail to svarup</a>(to send mail example)</p>
+    <p><a href="https://www.google.com/"><img src="google logo/google_logo.svg" width="100" alt="img"> </a> example of making clickable image. </p>
+    <!--The target attribute can have one of the following values:
+
+    _self - Default. Opens the document in the same window/tab as it was clicked
+    _blank - Opens the document in a new window or tab
+    _parent - Opens the document in the parent frame
+    _top - Opens the document in the full body of the window
+    -->
+    <br>
+
+    <h4 style="text-align:center;">linking to a specific part of the same page</h4>
+
+    <p>hear i will show you a example of linking specific part of this page <b>useing <q>ID</q>attribute in opening tag whenever you want go</b></p><p>if i want to go to the first link paragraph simply use <b>ID</b> attribute there in <b> opening of p tag</b></p>
+    <!-- here i am going top of the page -->
+
+    <a href="#top">go to top</a>
+    
+    <h3 id="images">images</h3>
+    <img src="https://media.istockphoto.com/id/1325438825/vector/premium-letter-sr-logo-design-rs-letter-logo-design-with-modern-trendy.jpg?s=612x612&w=0&k=20&c=1rgBoofcl29vFKoU0jZsakUKDjPFA3bxlIjxyfoNv2E=" alt="svarup rajput logo" width="200" align="center" style="transform:rotate(-5deg)" >using direct(absolute) link address from google</img>
+    <br>
+    <p style="margin-left:0;transform: rotate(5deg);transform: translateY(20px);" class="opacityimg"><img src="photos/my photos/creative S.jpg" width="200" alt="s for svarup" >using relative url</img></p>
+    <figure style="margin:0%" >
+    <img src="photos/my photos/creative S.jpg"  alt="image can't load" style="width:20%; transform: rotate(-10deg);">
+    <figcaption>
+    using figcaption element which is allow to user add caption to an image.
+    </figcaption>
+    </figure>
+    <br>
+    <h2>html style for color,backgroung-color,font-size,font-family,text-align,border-color, padding, margin </h2>
+    <!-- you can style tags like body,paragraph,heading etc..-->
+    <h3>format:</h3>
+    <p>tagname style="property:value;"</tagname</p>
+    <p style="color:red;">i am red</p>
+    <p style="color:blue;">i am blue</p>
+    <p style="color:green;">i am green</p>
+    <p style="background-color:red;"> here the background colour will be change</p>
+    <h2 style="color:black; background-color:antiquewhite; font-family:verdana; font-size:90%; text-align:center; border:2px solid black; padding:20px;">in this sentence you can see some style attributes</h2>
+    <!--one thing we have to note that if you using multiple styles then write every style attributes in singe line without continuous.
+    any comma(,) and any quotation mark(" ") and end every style atrributes with (;)-->
+    <h2>what is"HTML CSS"</h2>
+<P>three type:
+    <ul><li>inline css: by using the &lt;style&gt; attribute inside HTML elements</li>
+    <li>internal css:by using a &lt;style&gt; element in the &lt;head&gt; section </li>
+    <li>external css:by using a &lt;link&gt; element to link to an external CSS file </li>
+</ul>
+</P>
+<P style="color:violet"><b>inline css </b> example are as we have seen above and hear we can see in this paragraph</P>
+<p><b>internal css</b> using this method i will apply &lt;style&gt; element in &lt;head&gt; section by changing all "h4" style in this html file. </p>
+<h3 style="border:2px solid black; display: inline;">a flotting image example.</h3>
+<p>
+    <img src="gif/emoji.gif" width="50" style="float:left;">The image will float to the right of the text-line.</p>
+<hr>
+
+<h3 style="text-align:center; background-color:grey; display:block;">image map practice</h3>
+<br>
+<div id="map" >
+<p><img src="image map practice/full image.jpg" alt="photo of computer" width="612" height="374" usemap="#computer"></p>
+
+<pre style="width: 250px;">rect - defines a rectangular region
+circle - defines a circular region
+poly - defines a polygonal region
+default - defines the entire region</pre>
+</div>
+
+<map name="computer">
+    <area shape="rect" coords="443,276,157,52" href="image map practice/parts of image/moniter.jpg" target="_blank">
+    <area shape="rect" coords="597,306,473,32" href="image map practice/parts of image/cpu.jpg" target="_blank">
+    <area shape="rect" coords="409,313,482,347" href="image map practice/parts of image/mouse.jpg" target="_blank">
+    <area shape="poly" coords="2,296,76,269,367,301,319,337" href="image map practice/parts of image/keyboard.jpg" target="_blank">
+</map>
+
+<br>
+<hr style="clear:left">
+<br>
+<p style="background-image:url('photos/my photos/creative S.jpg' );clear: both;"> "creative S" background image for this paragraph</p>
+<p><b>another example by putting image in entire BODY section of this html file.</b></p>
+<br><br><br><br>
+<h4 style="margin: auto;">table practice</h4><br>
+<table border="1"  style="border-collapse:collapse;" cellpadding="10" id="table" >
+    <tr>
+        <th rowspan="3"> day</th>
+        <th colspan="3">seminar</th>
+    </tr>
+    <tr>
+        <th colspan="2">schedule</th>
+        <th rowspan="2">Topic</th>
+    </tr>
+    <tr>
+        <th>begin</th>
+        <th>End</th>
+    </tr>
+    <tr>
+        <th rowspan="2" style="background-color:red">monday</th>
+        <td rowspan="2">8:00pm</td>
+        <td rowspan="2">5:00pm</td>
+        <td>introduction to XML</td>
+    </tr>
+    <tr>
+        <td>validity</td>
+    </tr>
+    <tr>
+        <th rowspan="3">Tuesday</th>
+        <td>8:00pm</td>
+        <td>11:00pm</td>
+        <td rowspan="2">x-path</td>
+    </tr>
+    <tr>
+        <td>11:00am</td>
+        <td>2:00pm</td>
+    </tr>
+    <tr>
+        <td>2:00pm</td>
+        <td>5:00pm</td>
+        <td>xls transformation</td>
+    </tr>
+    <tr>
+        <th>Wednesday</th>
+        <td>8:00pm</td>
+        <td>12:00pm</td>
+        <td>xsl formating</td>
+    </tr>
+</table>
+
+<p>here is about two more tag for table:
+<ol>
+    <li>Caption:Defines a table caption or title</li>
+    <li>Colgroup:Specifies a group of one or more columns in a table for formatting</li>
+</ol>
+</p>
+<h5>use of colgroup tag</h5>
+<table width="20%"  style="border:1px solid bkack; border-style:groove;" cellpadding="5">
+    <colgroup>
+    <col span="1" style="background-color: red;" >
+    <col span="1" style="background-color:green;">
+    <col span="1" style="background-color:blue;">
+    </colgroup>
+    <tr>
+        <th width="10%">1</th>
+        <th>2</th>
+        <th>3</th>
+    </tr>
+    <tr>
+        <td style="border-radius:20%;">r</td>
+        <td>g</td>
+        <td>b</td>
+    </tr>
+    <tr>
+        <td>r</td>
+        <td>g</td>
+        <td>b</td>
+    </tr>
+    <tr>
+        <td>r</td>
+        <td>g</td>
+        <td>b</td>
+    </tr>
+</table >
+
+<br>
+<table width="25%" border="1" bordercolor="blue" cellpadding="20" cellspacing="0"  >
+    <tr bgcolor="gray">
+        <td></td>
+        <th bgcolor="pink">9am</th>
+        <th>10am</th>
+        <th>11am</th>
+        <th>12am</th>
+    </tr>
+    <tr style="background-color:rgba(129, 112, 112, 0.5);background-repeat:round;  background-size:cover; background-attachment:unset;">
+        <th>monday</th>
+        <td colspan="2" style="background-image:url(gif/emoji.gif); background-repeat:round;  background-size:cover;">philosophy</td>
+        <td>science</td>
+        <td>art</td>
+    </tr>
+    <tr style="background-color:grey">
+        <th>Tuesday</th>
+        <td colspan="3">gym</td>
+        <td>coding class</td>
+    </tr>
+</table>
+<table id="uniquetable" style="width:50%">
+    <tr>
+      <th>MON</th>
+      <th>TUE</th>
+      <th>WED</th>
+      <th>THU</th>
+      <th>FRI</th>
+      <th>SAT</th>
+      <th>SUN</th>
+    </tr>
+    <tr>
+      <td>s</td>
+      <td>o</td>
+      <td>o</td>
+      <td>o</td>
+      <td>o</td>
+      <td>;</td>
+      <td>l</td>
+    </tr>
+    <tr>
+      <td>f</td>
+      <td>v</td>
+      <td>t</td>
+      <td>r</td>
+      <td>r</td>
+      <td>g</td>
+      <td>r</td>
+    </tr>
+    <tr>
+      <td>y</td>
+      <td>u</td>
+      <td>f</td>
+      <td>u</td>
+      <td>g</td>
+      <td>t</td>
+      <td>w</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>6</td>
+      <td>wt</td>
+      <td>j</td>
+      <td>6</td>
+      <td>e</td>
+      <td>5</td>
+    </tr>
+  </table>
+  <p style="height:10%; border:1px solid black; background-color:gray; display:inline-block;border-color:blueviolet; border-style:groove;">
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, provident.
+</p>
+
+<form id="forms">
+<p>username:<input type="text" name="username" size="10" maxlength="15" id="text" autocomplete="on" ></input></p>
+<p>password:<input type="password" name="password"></p>
+<p>date:<input type="date" name="date and time"> time:<input type="time" name="date and time"> </p>
+<p> tell me about youself something in brief<br><textarea name="comments" name="about me" rows="3" cols="10" placeholder="write here" ></textarea></p>
+<p><strong>using radio button:</strong><input type="radio" name="game" value="cricket">
+<input type="radio" name="game" value="baseball">baseball
+<input type="radio" name="game" value="chess" checked="checked">chess
+ </p>
+ <p><strong>using checkbox:</strong> <input type="checkbox" name="gname" value="cricket" id="game"><lable for="game">cricket</lable>
+    <input type="checkbox" name="gname" value="baseball" id="game"><lable for="game">baseball</lable>
+    <input type="checkbox" name="gname" value="chess" checked="checked" id="game"><lable for="game" >chess</lable>
+</p>
+<select name="games" style="width:10%;" size="2">
+    <option value="cricket">cricket</option>
+    <option value="baseball">baseballs</option>
+    <option value="chess" checked="checked">chess</option>
+    <option value="non">non</option>
+</select>
+<br>
+<br>
+<h1>The input 'formtarget' attribute and 'readonly' attribute</h1>
+<p>The readonly attribute specifies that an input field should be read-only (cannot be changed):</p>
+
+<p>The formtarget attribute specifies a name or a keyword that indicates where to display the response that is received after submitting the form.</p>
+
+<form action="/action_page.php">
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname" value="svarup" readonly><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname" value="rahevar"><br><br>
+  <input type="submit" value="Submit" formtarget="blank">
+</form>
+<br>
+
+<p>The disabled attribute specifies that an input field should be disabled (unusable and un-clickable):</p>
+
+<form action="/action_page.php">
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname" value="svarup" disabled><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname" value="rahevar"><br><br>
+  <input type="submit" value="Submit">
+</form>
+
+<br>
+<button type="button" onclick="alert('hey you!,do not press the button again and again, okkay!')">click me!</button>
+<br>
+<form>
+    <label for="quantity">Quantity:</label>
+    <input type="number" id="quantity" name="quantity" min="0" max="100" step="10" value="30">
+  </form>
+<br>
+<form>
+    <label for="vol">Volume (between 0 and 50):</label>
+    <input type="range" id="vol" name="vol" min="0" max="50">
+  </form>
+  <br>
+  <form>
+    <label for="phone">Enter your phone number:</label>
+    <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+  </form>
+  <br>
+<input list="browsers">
+<datalist id="browsers">
+
+    <option value="chrome">chrome</option>
+    <option value="firebox">firebox</option>
+    <option value="opera">opera</option>
+    <option value="bing">bing</option>
+
+</datalist>
+<form>
+    <label for="quantity">Quantity (between 1 and 5):</label>
+    <input type="number" id="quantity" name="quantity" min="1" max="5">
+  </form>
+  <br>
+  <label for="cars">Choose a car:</label>
+<select  name="cars" id="cars">
+  <optgroup label="Swedish Cars">
+    <option value="volvo">Volvo</option>
+    <option value="saab">Saab</option>
+  </optgroup>
+  <optgroup label="German Cars">
+    <option value="mercedes">Mercedes</option>
+    <option value="audi">Audi</option>
+  </optgroup>
+</select>
+<br><br>
+<form>
+    <label for="favcolor">Select your favorite color:</label>
+    <input type="color" id="favcolor" name="favcolor">
+  </form>
+  <br>
+  <form>
+    <label for="fname">First name:</label>
+    <input type="text" id="fname" name="fname"><br><br>
+    <input type="hidden" id="custId" name="custId" value="3487">
+    <input type="submit" value="Submit">
+  </form>
+  <br>
+  <h1>The autocomplete attribute</h1>
+
+<p>The autocomplete attribute specifies whether or not an input field should have autocomplete enabled.</p>
+
+<p>Fill in and submit the form, then reload the page to see how autocomplete works.</p>
+
+<p>Notice that autocomplete is "on" for the form, but "off" for the e-mail field!</p>
+
+<form action="/action_page.php" autocomplete="on">
+  <label for="fname">First name:</label>
+  <input type="text" id="fname" name="fname" autocomplete="on"><br><br>
+  <label for="lname">Last name:</label>
+  <input type="text" id="lname" name="lname" autocomplete="on"><br><br>
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="email" autocomplete="off"><br><br>
+  <input type="submit" value="Submit">
+</form>
+<br>
+<p>insert file: <input type="file" name="song"> </p><br>
+<input type="submit" value="upload">
+<!-- <br> -->
+
+<p><b>grouping form element</b></p>
+<fieldset style="width:20%" class="align-form">
+    <legend> contact detail</legend>
+    <label>email: </label>
+        <input type="text" name="contact detail" title="type your email id">
+    <label>mobile:</label>
+        <input type="text" name="contact detail" title="type your phone number">
+    <label>telephone: </label>
+        <input type="text" name="contact detail" title="type telephone number ">
+
+        <!--lable used for=wrap around both the text description and the form input
+            for example email contains its form input(ALL THE STUFF WHICH RELATED TO EMAIL)  -->
+            
+</fieldset>
+<BR>
+    <h5>form validation example</h5>
+    <lable>username:<br>
+    <input type="text" name="username" required="required"</lable><br>
+    <lable>password:<br>
+        <input type="password" name="password" required="required" maxlength="8" </lable><br><br>
+    <input type="file" name="upload file">
+    <br><br>
+    <input type="submit" name="submit" value="submit the data">
+
+</form>
+<br>
+<form action="7c99f1dcda9b6cbca0f6e6f8cc8ad54b.jpg" method="get">
+    <input type="button" value="hello">
+</form>
+
+<hr>
+
+<h4 style="display:block;" align:"center;">using &lt;div&gt; and &lt;span&gt; elements </h4>
+
+<div id="header">
+    <!-- grouping text and elements in a block by <div> -->
+     <h3>about svarup rahevar</h3>
+     <ul>
+         <li>home</li>
+         <li>biografy</li>
+         <li>works</li>
+         <li>contact</li>
+     </ul>
+</div>
+
+<p id="unique">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius veniam blanditiis placeat. Soluta dignissimos eum accusamus. Sunt odit nam facere. <span id="gallery">tate modern london</span>
+    <!-- contain a section of text where there is no other suitable elements to differentiate it from its surrounding text by( here you can differentiate using <span> element :) -->
+</p>
+
+<p>escape characters are used to inclued special characters in your pages such as <, >, &, $ and many more (this charecters has differant codes to write in html, we can't use them direct so) some examples are give below. </p>
+
+<div>
+    <p> for less-than sign:(&lt;)</p>
+    <p> for greater-than sign:(&gt;)</p>
+    <p> for ampersand sign:(&amp;)</p>
+    <p> for quotation mark sign:(&quot;)</p>
+    <p> for cent sign:(&cent;)</p>
+    <p> for pound sign:(&pound;)</p>
+    <p> for yen sign:(&yen;)</p>
+    <p> for euro sign:(&euro;)</p>
+    <p> for copyright sign:(&copy;)</p>
+    <p> for registered trademark sign:(&reg;)</p>
+    <p> for tradmark sign:(&trade;)</p>
+    <p> for multiplication sign:(&times;)</p>
+    <p> for check mark sign:(&check;)</p>
+    <p> for devision one-halh sign:(&frac12;)</p>
+    <p> for devision one-fourth sign:(&frac14;)</p>
+    <p> for non brecking space:(&nbsp;) for non brecking space </p>
+    <p> (&laquo;) (&raquo;)</p>
+</div>
+<hr style="margin:10px">
+<section id="contact-details">
+    <address id="the end">
+        khatasana,dist-mahesana,state-gujarat(india)<br>
+        pin-code:384335<br>
+        eemail:rahevarsvarup1998@gmail.com<br>
+        contact:+917016370911
+    </address>
+</section>
+
+<p><abbr title="world wide web">www</abbr></p>
+<hr>
+
+</div>
+</ul>
+<br>
+<iframe src="../project 3.0/hello word.html" WIDTH="250" frameborder="1" alt="example of &lt;i frame tag&gt;" name="iframe" ></iframe>
+<a href="video.mp4" target="iframe">image in frame</a>
+
+<form>
+    <lable for="name">name:</lablr>
+    <input type="text" id="name" placeholder="type your name" style="border-bottom:1px solid black;border-top:none;background-color:white;opacity:0.5">
+</form>
+<nav class="navig">
+    <ul type="none" class="navlist">
+        <li><a href="#home" target="self">home</a></li>
+        <li><a href="#end" target="self">home</a></li>
+        <li><a href="#table" target="self">home</a></li>
+        <li><a href="#form" target="self">home</a></li>
+        <li><a href="#home" target="self" class="hnav"><img src="photos/my photos/home.png" width="20px"></a></li>
+        
+    </ul>
+</nav>
+<br>
+</body>
+</html>
+

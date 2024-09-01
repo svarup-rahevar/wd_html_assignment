@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<style>
+    .tb2 td{border:2px solid black;background-color:pink;}
+    .f-table {border:1px solid black;border-width: 5px 10px; border-color:rgb(106, 106, 225);margin: auto;}
+</style>
+<body>
+    <h3 align="center">Module-1 (Using HTML)</h3>
+    <table border="1" cellspacing="0" style="text-align: center;">
+        <tr>
+            <td rowspan="2"><a href="#">Home</a></td>
+            <td rowspan="2"><a href="#">About</a></td>
+            <td rowspan="2"><a href="#">content</a></td>
+            <td rowspan="2"><a href="#">Help</a></td>
+            <td rowspan="2"><a href="#">Store</a></td>
+            <td bgcolor="red"><a href="#">Download</a></td>
+        </tr>
+        <tr>
+            <td bgcolor="red"><a href="#">app</a></td>
+        </tr>
+        <tr>  
+            <td colspan="6"><img src="https://th.bing.com/th/id/OIP._RA2N7MK41RXJxx8t_CgegAAAA?rs=1&pid=ImgDetMain" alt="tops-tech_logo"></td>
+        </tr>
+        <tr>  
+            <td colspan="6" bgcolor="red">contact us</td>
+        </tr>
+        <tr>  
+            <td colspan="6"><img src="https://www.coursesuggest.com/wp-content/uploads/2023/11/tops-facebook-cover-images.jpg" alt="contact info"></td>
+        </tr>
+        <tr>
+            <td colspan="3" bgcolor="pink"><label for="fname">First-Name </label><input type="text" id="fname" placeholder="Enter your first-name"></td>
+            <td colspan="3" bgcolor="pink"><label for="lname">last-Name </label><input type="text" id="lname" placeholder="Enter your last-name"></td>
+        </tr>
+        <tr>
+            <td colspan="3" bgcolor="pink"><label for="email">Email-id </label><input type="email" id="email" placeholder="Enter your email id"></td>
+            <td colspan="3" bgcolor="pink"><label for="ph-number">Phone no </label><input type="number" id="ph-number" placeholder="Enter your phone number"></td>
+        </tr>
+        <tr>
+            <td colspan="3" bgcolor="pink">city <select>
+                <option value="Ahmedabad">Ahmedabad</option>
+                <option value="gandhinagar">Gandhinagar</option>
+                <option value="vadodara">Vadodara</option>
+                <option value="surat">Surat</option>
+            </select></td>
+            <td colspan="3" bgcolor="pink">Gender- Male:<input type="radio" name="gender"> female:<input type="radio" name="gender">Other:<input type="radio" name="gender"></td>
+        </tr>
+        <tr>
+            <td colspan="3"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7560.744897131074!2d72.60820066753118!3d22.99612298656696!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e85c2fc005927%3A0x918e69150ca1c935!2sTOPS%20Technologies%20-%20Best%20IT%20Training%20Institute%20in%20Ahmedabad!5e0!3m2!1sen!2sin!4v1720023832231!5m2!1sen!2sin" width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></td>
+            <td colspan="3">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/NJL4OS_vJI8?si=d7UG69e97W13igpV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </td> 
+        </tr>
+    </table>
+    <br><hr>
+    
+    <h2 style="text-align:center;margin-left:-70px;"><span style="color:brown"><i class="fa-solid fa-user-group fa-lg"></i> </span>Employee Registaration Form</h2>
+    <form>
+    <table style="border-left: 1px solid black;padding: 40px;">
+        <tr>
+            <td></td>
+            <td><input type="radio" name="honorofics">Mr
+                <input type="radio" name="honorofics">Mrs
+                <input type="radio" name="honorofics">Ms</td>
+        </tr>
+        <tr>
+            <td>First Name</td>
+            <td><input type="text" placeholder="First Name"></td>
+        </tr>
+        <tr>
+            <td>Last Name</td>
+            <td><input type="text" placeholder="Last Name"> </td>
+        </tr>
+        <tr>
+            <td>Mail Address1</td>
+            <td><input type="text" placeholder="Mail Address1"> </td>
+        </tr>
+        <tr>
+            <td>Mail Address2</td>
+            <td><input type="text" placeholder="Mail Address2"> </td>
+        </tr>
+        <tr>
+            <td>City</td>
+            <td><input type="text" placeholder="City"> </td>
+        </tr>
+        <tr>
+            <td>State</td>
+            <td colspan="3"> 
+                <select>
+                <option value="Ahmedabad">Gujarat</option>
+                <option value="gandhinagar">Rajasthan</option>
+                <option value="vadodara">Maharastra</option>
+                </select>
+            </td>
+            <tr>
+                <td>Zip</td>
+                <td><input type="number"></td>
+            </tr>
+            <tr>
+                <td>Upload Photo</td>
+                <td><input type="file"></td>
+            </tr>
+            <tr>
+                <td>E-mail</td>
+                <td><input type="text" placeholder="email"></td>
+            </tr>
+            <tr>
+                <td>Mobile</td>
+                <td><input type="tele" placeholder="+91"></td>
+            </tr>
+            <tr>
+                <td style="vertical-align: baseline;">Languages known</td>
+                <td><input type="checkbox" name="language"> Gujarati<br>
+                    <input type="checkbox" name="language"> Hindi<br>
+                    <input type="checkbox" name="language"> English<br>
+                    <input type="checkbox" name="language"> Marathi</td>
+            </tr>
+            <tr>
+                <td>Additional Information</td>
+                <td><textarea cols="0" rows="3" placeholder="optional"></textarea> </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="submit">
+                     <input type="reset"></td>
+            </tr>
+    </table>
+</form>
+
+    <br><hr><br>
+    
+    <h2 style="text-align: center;">Creating list using list tag of HTML</h2>
+
+    <ol type="I">
+        <li>Background Skills
+        <ol type="A">
+            <li>Unix Commands</li>
+            <li>Vim Text Editor</li>
+        </ol>
+        </li>
+        <li>HTML
+            <ol type="A">
+                <li>Minimal page</li>
+                <li>Headings</li>
+                <li>Tage</li>
+                <li>Lists
+                    <ol type="i">
+                        <li>Unordered</li>
+                        <li>ordered</li>
+                        <li>Definition</li>
+                        <li>Nested</li>
+                    </ol>
+                </li>
+                <li>Links
+                    <ol type="i">
+                        <li>Absolute</li>
+                        <li>relative</li>
+                    </ol>
+                </li>
+                <li>Images</li>
+            </ol>
+        </li>
+        <li>CSS
+            <ol type="A">
+                <li>Anatomy</li>
+                <li>Basic Selecter
+                    <ol type="i">
+                        <li>Element</li>
+                        <li>Class</li>
+                        <li>Id</li>
+                        <li>Group</li>
+                    </ol>
+                </li>
+                <li>The Dom</li>
+                <li>Advanced Selector</li>
+                <li>Box Model</li>
+            </ol>
+        </li> 
+        <li>Programming
+            <ol type="A">
+                <li>Python</li>
+                <li>JavaScript</li>
+            </ol>
+        </li>
+        <li>Database
+            <ol type="A">
+                <li>flat File</li>
+                <li>Relational</li>
+            </ol>
+        </li>
+    </ol>
+
+    <br><hr><br>
+
+    <table border="1" cellspacing="2" cellpadding="10" style="margin: auto;">
+        <tr bgcolor="gray">
+            <th>Device</th>
+            <th>Brand</th>
+            <th>Specifications</th>
+        </tr>
+        <tr>
+            <td>Smartphone</td>
+            <td>Apple</td>
+            <td>
+                <table border="1" cellspacing="2" cellpadding="10">
+                    <tr bgcolor="pink">
+                        <th>Model</th>
+                        <th>Storage</th>
+                    </tr>
+                    <tr>
+                        <td>iPhone 12 pro</td>
+                        <td>256 GB</td>
+                    </tr>
+                    <tr>
+                        <td>iPhone SE</td>
+                        <td>128 GB</td>
+                    </tr>
+                </table>
+            </td>
+            <tr>
+                <td>Laptop</td>
+                <td>HP</td>
+                <td>15.6 inch display</td>
+            </tr>
+            <tr>
+                <td>Tablet</td>
+                <td>Samsung</td>
+                <td>10.5 inch display</td>
+            </tr>
+        </tr>
+    </table>
+
+    <br><hr><br>
+
+    <table border="2" style="border-collapse: collapse;margin: auto;" cellpadding="10" class="tb2">
+        <caption style="margin-bottom: 10px;">Lay-out created using table</caption>
+        <tr>
+            <td colspan="3">Invoice #9876543210</td>
+            <td colspan="2">15 September 2020</td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <ul type="none" style="padding-left: 0;">
+                    <li>Pay to:</li>
+                    <li>Acme Billing Co.</li>
+                    <li>123 Main St</li>
+                    <li>Cityville, NA 12345</li>
+                </ul>
+            </td>
+            <td colspan="3">
+                <ul type="none" style="padding-left: 0;">
+                    <li>Costomer</li>
+                    <li>John Smith</li>
+                    <li>321 Willow way</li>
+                    <li>Southest Northwesterhire, MA 54321</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td style="border: none;">Name / Description</td>
+            <td style="border-bottom: none;">Qty.</td>
+            <td colspan="2"  style="border-bottom: none;">@</td>
+            <td  style="border-bottom: none;">Cost</td>
+        </tr>
+        <tr>
+            <td style="border: none;">Paperclips</td>
+            <td style="border-bottom: none;border-top:none">2000</td>
+            <td colspan="2"style="border-bottom: none;border-top:none">0.02</td>
+            <td  style="border-bottom: none;border-top:none">20.00</td>
+        </tr>
+        <tr>
+            <td style="border:none">Staples(box)</td>
+            <td  style="border-top: none;">200</td>
+            <td colspan="2" style="border-bottom: none;border-top:none">2.00</td>
+            <td style="border-top:none"">200.00</td>
+        </tr>
+        <tr>
+            <td colspan="4"><b>Subtotal</b></td>
+            <td><b>220.00</b></td>
+        </tr>
+        <tr>
+            <td colspan="2">Tax</td>
+            <td colspan="2">9%</td>
+            <td>19.80</td>
+        </tr>
+        <tr>
+            <td colspan="4"><b>Grand total</b></td>
+            <td><b>239.80</b></td>
+        </tr>
+    </table>
+    
+    <br><hr><br>
+
+    <form>
+        <table class="f-table" cellpadding="7">
+            <tr>
+                <td colspan="3" style="text-decoration: underline red;"><b>Registaration</b></td>
+            </tr>
+            <tr>
+                <td colspan="3">Personal Details</td>
+            </tr>
+            <tr>
+                <td><lable for="fname">Full Name</lable><br>
+                    <input type="text" placeholder="Enter your first name" </td>
+                <td><lable for="father-name">Father Name</lable><br>
+                    <input type="text" placeholder="Enter your father name" </td>
+                <td><lable for="lname">Lasrt Name</lable><br>
+                    <input type="text" placeholder="Enter your last name" </td>
+            </tr>
+            <tr>
+                <td><lable for="DOB">Date of Birth</lable><br>
+                    <input type="text" placeholder="Enter your DOB" </td>
+                <td><lable for="full-name">Full Name</lable><br>
+                    <input type="text" placeholder="Enter your full name" </td>
+                <td><lable for="Email">Email</lable><br>
+                    <input type="email" placeholder="Enter your email" </td>
+            </tr>
+            <tr>
+                <td><lable for="M-number">Mobile Number</lable><br>
+                    <input type="number" placeholder="Enter Mobile number" </td>
+                <td><lable for="gender">Gender</lable><br>
+                    <input type="text" placeholder="Enter your gender" </td>
+                <td><lable for="address">Address</lable><br>
+                    <input type="text" placeholder="Enter your address" </td>
+            </tr>
+            <tr>
+                <td colspan="3"><b>Other Details</b></td>
+            </tr>
+            <tr>
+                <td><lable for="stream">Stream</lable><br>
+                    <input type="text" placeholder="Enter your stream" </td>
+                <td><lable for="class">Previous Class</lable><br>
+                    <input type="number" placeholder="Enter previous class" </td>
+                <td><lable for="hobbies">Hobbies</lable><br>
+                    <input type="text" placeholder="Enter your hobbies" </td>
+            </tr>
+            <tr>
+                <td><lable for="Ac-number">Account Number</lable><br>
+                    <input type="number" placeholder="Enter Account number" </td>
+                <td><lable for="religion">Religion</lable><br>
+                    <input type="text" placeholder="Enter your religion" </td>
+                <td><lable for="lname">Category</lable><br>
+                    <input type="text" placeholder="Enter your category" </td>
+            </tr>
+            <tr>
+                <td colspan="3" align="center"><input type="submit" style="width:200px;padding: 5px;border-radius:20px;background-color: red;"></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
