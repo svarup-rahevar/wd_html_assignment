@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .section1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .form1 label{
+        width:150px;display:inline-block;
+        margin:10px
+    }
+    .form1{
+        background-color: blueviolet;
+        width: 50%;
+        padding: 30px;
+        margin:auto;
+    }
+    .section2{
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        align-items: center;
+        margin: auto;
+        background-color: blueviolet;
+        margin-top: 20px;
+        gap:20px;
+        padding: 30px;
+    }
+    .section2 > div:nth-child(2){
+        display: flex;
+        justify-content:center;
+        align-items: center;
+        gap:50px
+    }
+    .section2 input{
+        margin-bottom: 20px;
+        
+    }
+    .section2 label{
+        width: 150px;
+        display: inline-block;
+    }
+    .section2 button{
+        width: 45px;
+        display: inline-block;
+    }
+    .section3{
+        width: 50%;
+        margin: auto;
+        background-color: blueviolet;
+        padding: 10px;
+        border-radius: 15px 15px 0 0;
+    }
+
+    .carousel {
+            width: 300px;
+            height: 200px;
+            overflow: hidden; /* Hide overflow to create carousel effect */
+            position: relative;
+            border: 2px solid #ccc;
+            border-radius: 10px;
+        }
+        .slides {
+            display: flex; /* Align slides horizontally */
+            transition: transform 0.5s ease; /* Smooth transition effect */
+            height: 100%;
+        }
+        .slide {
+            width: 300px; /* Same as carousel width */
+            height: 200px; /* Same as carousel height */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            color: white;
+            border-radius: 10px; /* Rounded corners */
+            flex:1 0 300px
+        }
+        button {
+            margin: 10px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+            background-color: #007BFF;
+            color: white;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #0056b3; /* Darker blue on hover */
+        }
+        #colorbx{
+            width: 300px;
+            height: 200px;
+            background-color: #f0f0f0; /* Initial background color */
+            border: 2px solid #ccc;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            color: white;
+            margin-bottom: 20px;
+        }
+        .colorbox{
+           display: flex;
+           flex-direction: column;
+           justify-content: center;
+           align-items: center;
+        }
+</style>
+<body>
+    <div class="section1">
+    <form class="form1">
+        <label for="email">Email: </label>
+        <input  type="text" name="email"><br>
+        <label for="password:">Password </label> 
+        <input type="password" id="password"  name="password">
+        <button id="button1" onclick="togglePassword()" type="button">show</button>
+    </form>
+    </div>
+    <div class="section2">
+        <div>
+            <h4 align="center">Maths operation</h4>
+            <div>
+                <label for="first_number">First Number:</label>
+                <input id="number1" type="number" name="first_number"><br>
+                <label for="Second_number">Second Number:</label>
+                <input id="number2" type="number" name="second_number">
+            </div>
+        </div>
+        <div>
+            <div>
+                <button onclick="addition()">+</button>
+                <button onclick="sub()">-</button>
+                <button onclick="multiply()">*</button>
+                <button onclick="division()">/</button>
+                <button onclick="modulus()">%</button>
+            </div>
+            <p>Answer is: <span id="answer"></span></p>
+        </div>
+    </div>
+    <h3 align="center">Marksheet for Information Technology</h3>
+    <form class="section3">
+        <h3>Enter Marks</h3>
+        <table  cellspacing="20px">
+            <tr>
+                <td>1. C Language</td>
+                <td><input type="number" value="44" max="50"></td>
+            </tr>
+            <tr>
+                <td>2. C++ Language</td>
+                <td><input type="number" value="44" max="50"></td>
+            </tr>
+            <tr>
+                <td>3. Database</td>
+                <td><input type="number" value="32" max="50"></td>
+            </tr>
+            <tr>
+                <td>4. HTML</td>
+                <td><input type="number" value="23" max="50"></td>
+            </tr>
+            <tr>
+                <td>5. CSS</td>
+                <td><input type="number" value="50" max="50"></td>
+            </tr>
+            <tr>
+                <td>6. PHP</td>
+                <td><input type="number" value="44" max="50"></td>
+            </tr>
+            <tr>
+                <td>7. Core Java</td>
+                <td><input type="number" value="50" max="50"></td>
+            </tr>
+        </table>
+        <button id="result2" onclick="calculateResults()" type="button" style="margin-left: 20px;">Result</button>
+    </form>
+    <div style="width: 50%;margin: auto;background-color:rgb(204, 204, 195);padding:10px;border-radius: 0 0 15px 15px">
+        <p>Total is : <span id="total" ><b>272</b></span></p>
+        <p>Percentage is :<span id="percentage" ><b>78 %</b></span></p>
+    </div>
+
+    <div class="carousel" style="margin: 20px auto;">
+        <div class="slides" id="slides">
+            <div class="slide" style="background-color: #FF5733;">Slide 1</div>
+            <div class="slide" style="background-color: #33FF57;">Slide 2</div>
+            <div class="slide" style="background-color: #3357FF;">Slide 3</div>
+            <div class="slide" style="background-color: #F1C40F;">Slide 4</div>
+            <div class="slide" style="background-color: #8E44AD;">Slide 5</div>
+        </div>
+    </div>
+    <div style="width: 50%;margin:auto;text-align: center;">
+        <button onclick="prevSlide()">Previous</button>
+        <button onclick="nextSlide()">Next</button>
+    <div>
+
+        <div class="colorbox"> 
+            <div id="colorbx">Click the button to change my color!</div>
+            <button type="button" onclick="changeColor()">Next Color</button>
+        </div>
+    
+    <script>
+         function togglePassword() {
+            var passwordField = document.getElementById("password");
+            var button = event.target;
+
+            if (passwordField.type === "password") {
+                passwordField.type = "text";
+                button.textContent = "Hide";
+            } else {
+                passwordField.type = "password";
+                button.textContent = "Show";
+            }
+        }
+        
+        //Maths operation
+
+        function addition(){
+        var first = parseFloat(document.getElementById('number1').value);
+        var second = parseFloat(document.getElementById('number2').value);
+        
+        document.getElementById('answer').textContent = Number(first) + Number(second);
+        }
+
+        function sub(){
+            var first = parseFloat(document.getElementById('number1').value);
+            var second = parseFloat(document.getElementById('number2').value);
+
+            document.getElementById('answer').textContent = Number(first) - Number(second);
+        }
+
+        function multiply(){
+            var first = parseFloat(document.getElementById('number1').value);
+            var second = parseFloat(document.getElementById('number2').value);
+            document.getElementById('answer').textContent = Number(first) * Number(second);
+        }
+
+        function division(){
+            var first = parseFloat(document.getElementById('number1').value);
+            var second = parseFloat(document.getElementById('number2').value);
+            document.getElementById('answer').textContent = Number(first) / Number(second);
+        }
+
+        function modulus(){
+            var first = parseFloat(document.getElementById('number1').value);
+            var second = parseFloat(document.getElementById('number2').value);
+            document.getElementById('answer').textContent = Number(first) % Number(second);
+        }
+
+        //marksheet
+
+        function calculateResults() {
+         
+            var inputs = document.querySelectorAll("input[type='number']");
+            var total = 0;
+
+            inputs.forEach(function(input) {
+                var value = Number(input.value);
+                    total += value;
+            });
+
+            var percentage = (total / 350) * 100;
+
+            document.getElementById("total").innerText = total;
+            document.getElementById("percentage").innerText = percentage.toFixed(2) + " %";
+        }
+
+        let currentIndex = 0; 
+        const totalSlides = 5; 
+    
+        function updateSlidePosition() {
+            const slides = document.getElementById("slides");
+            const offset = -currentIndex * 300;
+            slides.style.transform = `translateX(${offset}px)`; 
+        }
+
+        // Function to go to the next slide
+        function nextSlide() {
+            currentIndex = (currentIndex + 1) % totalSlides; 
+            updateSlidePosition();
+        }
+
+        // Function to go to the previous slide
+        function prevSlide() {
+            currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+            updateSlidePosition();
+        }
+
+        const colors = ["#FF5733", "#33FF57", "#3357FF", "#F1C40F", "#8E44AD"];
+        let currentIndex1 = 0; // Track the current index
+
+        // Function to change the background color of the div
+        function changeColor() {
+            const colorBox = document.getElementById("colorbx");
+            
+            // Change background color to the next color in the array
+            colorbx.style.backgroundColor = colors[currentIndex1];
+
+            // Increment the index and reset to 0 if it exceeds the array length
+            currentIndex1 = (currentIndex1 + 1) % colors.length;
+        }
+    </script>
+
+</body>
+</html>
