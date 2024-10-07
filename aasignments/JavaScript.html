@@ -280,13 +280,11 @@
             slides.style.transform = `translateX(${offset}px)`; 
         }
 
-        // Function to go to the next slide
         function nextSlide() {
             currentIndex = (currentIndex + 1) % totalSlides; 
             updateSlidePosition();
         }
 
-        // Function to go to the previous slide
         function prevSlide() {
             currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
             updateSlidePosition();
@@ -295,14 +293,10 @@
         const colors = ["#FF5733", "#33FF57", "#3357FF", "#F1C40F", "#8E44AD"];
         let currentIndex1 = 0; // Track the current index
 
-        // Function to change the background color of the div
         function changeColor() {
             const colorBox = document.getElementById("colorbx");
             
-            // Change background color to the next color in the array
             colorbx.style.backgroundColor = colors[currentIndex1];
-
-            // Increment the index and reset to 0 if it exceeds the array length
             currentIndex1 = (currentIndex1 + 1) % colors.length;
         }
     </script>
